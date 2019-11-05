@@ -109,6 +109,9 @@ class LocationButton: UIButton, CLLocationManagerDelegate {
             self.isUserInteractionEnabled = true
             self.alpha = 1.0
             
+            //ボタンに郵便番号を表示する
+            self.setTitle(self.address, for: .normal)
+            
             /*
             //Log
             print("--------------------")
